@@ -34,6 +34,7 @@ Capture the waveform output and include the results in your report for verificat
 Verilog Code:
 
 module swap(clk);
+
   input clk;
   
   real a = 5;
