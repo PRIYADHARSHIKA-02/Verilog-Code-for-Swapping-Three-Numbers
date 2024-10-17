@@ -32,7 +32,7 @@ Save and Document Results:
 Capture the waveform output and include the results in your report for verification.
 
 Verilog Code:
-''
+'''
 module swap(clk);
   input clk;
   real a = 5;
@@ -46,7 +46,7 @@ begin
  b = c;
  c = temp;
 end endmodule
-''
+'''
 Output:
 
 ![WhatsApp Image 2024-10-17 at 19 40 57_5d7b42ad](https://github.com/user-attachments/assets/281f49ad-cd09-440f-929e-1bdba5610ed3)
