@@ -73,17 +73,31 @@ Testbench for Swapping Three Numbers:
 `timescale 1ns / 1ps
 
 module swap_tb;
+
 reg clk;
+
 real a, b, c; 
+
 swap uut ( .clk(clk) );
+
 always #5 clk = ~clk; 
+
   initial begin clk = 0;
-  a = uut.a; b = uut.b;
+  
+  a = uut.a;
+  
+  b = uut.b;
+  
   c = uut.c;
+  
 $monitor("At time %t, a = %f, b = %f, c = %f", $time, uut.a, uut.b, uut.c);
+
 #50;
+
 $finish;
+
 end 
+
 endmodule
 
 
